@@ -8896,9 +8896,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"miniapptemplate@workspace:.":
+"miniappcreditcard@workspace:.":
   version: 0.0.0-use.local
-  resolution: "miniapptemplate@workspace:."
+  resolution: "miniappcreditcard@workspace:."
   dependencies:
     "@babel/core": ^7.25.2
     "@babel/preset-env": ^7.25.3

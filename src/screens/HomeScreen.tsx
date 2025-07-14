@@ -13,7 +13,7 @@ const HomeScreen = () => {
   return (
     <View style={styles.container}>
       <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-      <Text>Hello from Mini App Template!</Text>
+      <Text>Hello from Credit Card Mini App!</Text>
     </View>
   );
 };
@@ -21,6 +21,8 @@ const HomeScreen = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
   },
 });
 
