@@ -1,6 +1,7 @@
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import * as Repack from '@callstack/repack';
+import rspack from '@rspack/core';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -77,7 +78,18 @@ export default env => {
             requiredVersion: '^2.5.2',
             version: '2.5.2',
           },
+          '@react-native-async-storage/async-storage': {
+            singleton: true,
+            eager: false,
+            requiredVersion: '^2.2.0',
+          },
         },
+      }),
+      new rspack.IgnorePlugin({
+        resourceRegExp: /^@react-native\/virtualized-lists/,
+      }),
+      new rspack.IgnorePlugin({
+        resourceRegExp: /^@react-native-masked-view/,
       }),
     ],
   };
